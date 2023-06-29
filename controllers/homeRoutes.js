@@ -84,6 +84,9 @@ router.get('/new-entry', (req, res) => {
   res.render('create');
 });
 
+router.get('/library', (req, res) => {
+  res.render('library');
+});
 
 
 
