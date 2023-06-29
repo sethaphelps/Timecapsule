@@ -1,28 +1,34 @@
 <div class="row">
-  <div class="col-auto">
+  <div class="col-auto text-center">
     <h2>Welcome, {{name}}!</h2>
   </div>
 </div>
 
-<div class="col-md-6 new-entry">
-    <h3>Create a new note!</h3>
+<div class="row new-entry">
+  <div class="col-md-4 text-center">
+    <h3>Create a new entry!</h3>
+    <button class="btn btn-sm btn-danger create-entry-btn">Create New</button>
+  </div>
+</div>
+
+<div class="col-md-4 text-center entry">
+    <h3>Past Entries</h3>
+    <button class="btn btn-sm btn-danger show-list-btn">See More</button>
+  </div>
+    <div class="col-md-4 text-center">
+    <p>insert fun image(s) code here</p>
+  </div>
+</div>
+
+<div class="col-md-6 library">
+    <h3>See your library!</h3>
     <div class="row mb-2">
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger create-entry-btn">Create New</button>
+        <button class="btn btn-sm btn-danger show-library-btn">See your library</button>
       </div>
     </div>
   </div>
 </div>
-
-<div class="col-md-6 entry">
-    <h3>See all notes!</h3>
-    <div class="row mb-2">
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger show-list-btn">See all notes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script src="./js/profile.js"></script>
 <script src="./js/entrylist.js"></script>
+<script src="./js/library.js"></script>
