@@ -17,8 +17,7 @@
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
-        {{#if logged_in}}
-        <a href="/entry">entries</a> |
+        {{#if logged_in}} |
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">Login | Sign Up</a>
