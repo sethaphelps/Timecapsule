@@ -12,26 +12,12 @@
         <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
         <p class="text-danger create-response"> </p>
       </div>
+        <button type="submit" class="btn btn-primary create-btn">Create</button>
     </form>
 
-    {{#if entries.length}}
-      <div class="col-md-6 project-list">
-        <h3>Current Projects:</h3>
-        {{#each entries as |entry|}}
-        <div class="row mb-2">
-          <div class="col-md-8">
-            <h4><a href="/entry/{{entry.id}}">{{entry.name}}</a></h4>
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-sm btn-danger" data-id="{{entry.id}}">DELETE</button>
-          </div>
-        </div>
-        {{/each}}
-      </div>
-    {{/if}}
+    
   
   </div>
 

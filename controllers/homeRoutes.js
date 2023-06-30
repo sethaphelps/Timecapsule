@@ -40,7 +40,7 @@ router.get('/entry/:id', async (req, res) => {
 
     const entry = entryData.get({ plain: true });
 
-    res.render('entry', {
+    res.render('entries', {
       ...entry,
       logged_in: req.session.logged_in
     });
@@ -86,6 +86,10 @@ router.get('/new-entry', (req, res) => {
 
 router.get('/library', (req, res) => {
   res.render('library');
+});
+
+router.get('/signup', (req, res) => {
+  res.render('signup');
 });
 
 module.exports = router;

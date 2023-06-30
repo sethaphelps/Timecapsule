@@ -1,20 +1,19 @@
-<!-- Loop over each object in the projects array -->
-{{#each entries as |entry| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    {{!-- <h2>
-      <a href="/entry/{{entry.id}}">{{entry.title}}</a>
-    </h2> --}}
-    <p>{{entry.title}}</p>
-    <p>Created by {{entry.user.name}} on {{format_date entry.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{entry.user.description}}
-    </p>
-  </div>
-  {{!-- <div class="col-md-4">
-    <button class="btn btn-sm btn-danger" data-id="{{entry.id}}">DELETE</button>
-  </div> --}}
-</div>
-{{/each}}
+
+{{#if entries.length}}
+      <div id="delete-btn" class="col-md-6 project-list">
+        <h3>Current Projects:</h3>
+        {{#each entries as |entry|}}
+        <div class="row mb-2">
+          <div class="col-md-8">
+            <h4><a href="/entry/{{entry.id}}">{{entry.title}}</a></h4>
+          </div>
+          <div class="col-md-4">
+            <button class="btn btn-sm btn-danger entry-delete-btn" data-id="{{entry.id}}">DELETE</button>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    {{/if}}
+    </div>
+
+<script src="./js/delete.js"></script>
