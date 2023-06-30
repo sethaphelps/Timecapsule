@@ -1,6 +1,5 @@
-var showListBtn = document.querySelector(".show-list-btn");
-  showListBtn.addEventListener("click", function() {
- 
+var showListBtn = document.querySelector(".show-entry-btn");
 
-    window.location.href = "/entry"; 
-  });
+showListBtn.addEventListener("click", function() {
+  window.location.href = "/entry"; 
+});
