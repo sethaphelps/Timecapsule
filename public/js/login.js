@@ -4,7 +4,9 @@ const loginFormHandler = async (event) => {
   // Collect values from the login form
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
+  const tryAgain = document.querySelector(".try-again");
 
+  console.log(tryAgain);
   if (email && password) {
     // Send a POST request to the API endpoint
     const response = await fetch('/api/users/login', {
@@ -17,17 +19,20 @@ const loginFormHandler = async (event) => {
       // If successful, redirect the browser to the profile page
       document.location.replace('/profile');
     } else {
-      alert(response.statusText);
+      //alert(response.statusText);
+      tryAgain.textContent = "Wrong email or password. Try again."
     }
   }
 };
 
 const signupFormHandler = async (event) => {
   event.preventDefault();
-console.log("#####")
+  console.log("#####")
   const name = document.querySelector('#name-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
+  const signAgain = document.querySelector(".sign-again");
+
 
   if (name && email && password) {
     const response = await fetch('/api/users', {
@@ -39,8 +44,11 @@ console.log("#####")
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert(response.statusText);
+      //alert(response.statusText);
+      signAgain.textContent = "Account with this email already exists. Use a different email or log in.";
     }
+  } else {
+    signAgain.textContent = "All fields must be filled";
   }
 };
 
