@@ -1,19 +1,19 @@
-
 {{#if entries.length}}
-      <div id="delete-btn" class="col-md-6 project-list">
-        <h3>Current Projects:</h3>
-        {{#each entries as |entry|}}
-        <div class="row mb-2">
-          <div class="col-md-8">
-            <h4><a href="/entry/{{entry.id}}">{{entry.title}}</a></h4>
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-sm btn-danger entry-delete-btn" data-id="{{entry.id}}">DELETE</button>
-          </div>
-        </div>
-        {{/each}}
+<div id="delete-btn" class="col-md-6 project-list">
+  <button class="btn btn-sm btn-danger"><a href="/">Back to Profile</a></button>
+  <h3>Current Projects:</h3>
+    {{#each entries as |entry|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/entry/{{entry.id}}">{{entry.title}}</a></h4>
       </div>
-    {{/if}}
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger entry-delete-btn" data-id="{{entry.id}}">DELETE</button>
+      </div>
     </div>
+    {{/each}}
+  </div>
+{{/if}}
+</div>
 
 <script src="./js/delete.js"></script>
