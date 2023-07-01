@@ -15,8 +15,42 @@
     <div class="form-group">
       <p class="text-danger create-response"> </p>
     </div>
-      <button type="submit" class="btn btn-primary create-btn">Create</button>
+
+    <label class= "form-group">Upload a photo</label>
+
+    <form
+    action=""
+    method="post"
+    enctype="multipart/form-data"
+    onsubmit="AJAXSubmit(this); return false;"
+    >
+      <p>
+        <label for="upload_preset"
+          >Unsigned upload Preset:
+          <input type="text" name="upload_preset" />(set it
+          <a
+            href="https://cloudinary.com/console/settings/upload#upload_presets"
+            >here</a
+          >)</label
+        >
+      </p>
+      <p>
+        <label>Select your photo: <input type="file" name="file" /></label>
+      </p>
+
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+      <img id="uploaded" />
+      <div id="results"></div>
+  </form>
+  {{!-- <img id="uploaded" src=""> Needs to be moved to where image gets rendered with entry--}} 
+
+   <button type="submit" class="btn btn-primary create-btn">Create</button>
   </form>
 </div>
 
+     
+
   <script src="./js/create.js"></script>
+  <script src="../public/js/index.js"></script>
