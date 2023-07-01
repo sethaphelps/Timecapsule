@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>timeCapsule | Memories</title>
   <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Serif+Display">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=News+Cycle">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a href="/profile">profile | </a>
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/profile">profile</a> |
@@ -30,9 +31,6 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      
-    </footer>
   </div>
 
   <!-- Render script for logged in users only -->

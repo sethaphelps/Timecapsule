@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -17,13 +17,6 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-body {
-  margin: 0;
-}
-
-header {
-  background-color: #2F5061;
-}
 
 /**
  * Render the `main` element consistently in IE.
@@ -360,9 +353,16 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: Didot;
+  background-color: #d8f4ef;
+  font-family: News Cycle;
   font-size: 16px;
   color: #334545;
+}
+
+header {
+  background-color: #ffffff;
+  font-family: DM Serif Display;
+  border-bottom: solid rgb(77, 119, 107);
 }
 
 h1,
@@ -424,12 +424,12 @@ button {
 }
 
 a {
-  color: #000000;
+  color: #6cb547;
   text-decoration: none;
 }
 
 a:hover {
-  color: #E57F84;
+  color: #3d5542;
 }
 
 /* HEIGHT / WIDTH UTILS */
@@ -1022,11 +1022,13 @@ a:hover {
 
 .btn.btn-danger {
   background-color: #e64c66;
+  
   color: #ffffff;
 }
 
 .btn.btn-danger:hover {
   background-color: #ee8294;
+  box-shadow: 3px 3px olive;
 }
 
 .btn.btn-info {
@@ -1085,6 +1087,7 @@ a:hover {
 
 .card {
   border: 1px solid #1a1a1a;
+  padding: 0.375rem;
   margin-bottom: 1rem;
 }
 
