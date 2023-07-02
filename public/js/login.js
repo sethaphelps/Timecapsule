@@ -3,9 +3,9 @@ const loginFormHandler = async (event) => {
 
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
-  const tryAgain = document.querySelector(".try-again");
+  const logAgain = document.querySelector(".log-again");
 
-  console.log(tryAgain);
+  console.log(logAgain);
   if (email && password) {
     
     const response = await fetch('/api/users/login', {
@@ -14,13 +14,11 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
-    if (response.ok) {
-    
+    if (response.ok) {  
       document.location.replace('/profile');
     } else {
-      alert("Wrong password try again");
- 
-      tryAgain.textContent = "Wrong email or password. Try again."
+      //alert("Wrong password try again"); 
+      logAgain.textContent = "Wrong email or password. Try again."
     }
   }
 };

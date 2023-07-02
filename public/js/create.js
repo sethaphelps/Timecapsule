@@ -17,14 +17,14 @@ const newFormHandler = async (event) => {
     if (response.ok) {
       alert("Entry successfully added. Click OK to return to profile.");
       document.location.replace('/profile');
-    } else {
-      createResponse.textContent = "cannot create";
     }
+  } else if (!title){
+    createResponse.textContent = "Title cannot be blank";
+  }
+  else {
+    createResponse.textContent = "Description cannot be blank";
   }
 };
-
-
-
 
 document
   .querySelector('.new-project-form')
