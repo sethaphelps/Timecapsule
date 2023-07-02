@@ -6,7 +6,6 @@ const signupFormHandler = async (event) => {
     const password = document.querySelector('#password-signup').value.trim();
     const signAgain = document.querySelector(".sign-again");
   
-  
     if (name && email && password) {
       const response = await fetch('/api/users', {
         method: 'POST',
