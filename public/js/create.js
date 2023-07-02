@@ -29,11 +29,13 @@ const newFormHandler = async (event) => {
 window.ajaxSuccess = function () {
   let response = JSON.parse(this.responseText);
   console.log("ajaxSuccess", typeof this.responseText);
+  console.log(response)
   document
     .getElementById("uploaded")
     .setAttribute("src", response["secure_url"]);
   document.getElementById("results").innerText = this.responseText;
 };
+
 window.AJAXSubmit = function (formElement) {
   console.log("starting AJAXSubmit");
   if (!formElement.action) {
@@ -48,6 +50,7 @@ window.AJAXSubmit = function (formElement) {
   );
   xhr.send(new FormData(formElement));
 };
+
 
 document
   .querySelector('.new-project-form')
