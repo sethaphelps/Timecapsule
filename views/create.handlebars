@@ -11,8 +11,9 @@
     <div class="form-group">
       <label for="project-desc">Description:</label>
       <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
+        <button type="submit" value="Submit" class="btn btn-sm btn-danger create-btn">Create</button>
+    </form>
     </div>
-   
     <label class= "form-group">Upload a photo:</label>
     <form
     action=""
@@ -23,7 +24,7 @@
       <p>
         <label for="upload_preset"
           >Unsigned upload Preset:
-          <input type="text" name="upload_preset" />(set it
+          <input type="text" name="upload_preset" value="new_one"/>(set it
           <a href="https://cloudinary.com/console/settings/upload#upload_presets">here</a>)
         </label>
       </p>
@@ -31,16 +32,14 @@
         <label>Select your photo: <input type="file" name="file" /></label>
       </p>
 
-      {{!-- <input type="submit" value="Submit" /> --}}
-      <button type="submit" value="Submit" class="btn btn-sm btn-danger create-btn">Create</button>
-      <p class="text-danger create-response"> </p>   
+      <input type="submit" value="Submit" class="create-btn"/> 
       
-      <img id="uploaded"/>
+      <img width="200px" height="200px" id="uploaded"/>
       <div id="results"></div>
+    
     </form>  
-  {{!-- <img id="uploaded" src=""> Needs to be moved to where image gets rendered with entry--}} 
-  </form>
+  
 </div>
 
 <script src="./js/create.js"></script>
-<script src="../public/js/index.js"></script>
+<script src="./js/index.js"></script>
