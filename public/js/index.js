@@ -1,5 +1,5 @@
-import "../css/jass.css";
-//import ajaxSuccess from "jquery";
+// require('../css/jass.css');
+// //import ajaxSuccess from "jquery";
 
 window.ajaxSuccess = function () {
   let response = JSON.parse(this.responseText);
@@ -19,7 +19,7 @@ window.AJAXSubmit = function (formElement) {
   xhr.onload = ajaxSuccess;
   xhr.open(
     "post",
-    "https://api.cloudinary.com/v1_1/dpv6wk883/image/upload"
+    "https://api.cloudinary.com/v1_1/j9rh1yl1/image/upload"
   );
   xhr.send(new FormData(formElement));
 };
