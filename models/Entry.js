@@ -16,6 +16,9 @@ class Entry extends Model {}
     text: {
       type: DataTypes.STRING,
     },
+    image_url: {
+      type: DataTypes.STRING, 
+    },
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
@@ -28,6 +31,7 @@ class Entry extends Model {}
         key: 'id',
       },
     },
+    
   },
   {
     sequelize,

@@ -1334,9 +1334,9 @@ form [type='radio'] {
   max-width: 100%;
 }
 
-/* #results {
+#results {
   display: none;
-} */
+}
 
 #upload {
   display: none;
