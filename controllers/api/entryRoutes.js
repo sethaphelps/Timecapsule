@@ -4,8 +4,12 @@ const withAuth = require('../../utils/loggedIn');
 
 router.post('/', withAuth, async (req, res) => {
   try {
+    const { title, text, imageUrl } = req.body;
+
     const newEntry = await Entry.create({
-      ...req.body,
+      title,
+      text,
+      image_url: imageUrl, 
       user_id: req.session.user_id,
     });
 
