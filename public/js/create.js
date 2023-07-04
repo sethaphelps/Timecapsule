@@ -3,8 +3,8 @@ let imageUrl;
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const title = document.querySelector('#project-name').value.trim();
-  const text = document.querySelector('#project-desc').value.trim();
+  const title = document.querySelector('#entry-name').value.trim();
+  const text = document.querySelector('#entry-desc').value.trim();
 
   const createResponse = document.querySelector(".create-response");
 
@@ -66,5 +66,5 @@ const newFormHandler = async (event) => {
 // };
 
 document
-  .querySelector('.new-project-form')
+  .querySelector('.new-entry-form')
   .addEventListener('submit', newFormHandler);
