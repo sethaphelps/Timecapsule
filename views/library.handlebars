@@ -4,9 +4,15 @@
     <div>
       <h2>Image Library</h2>
     </div>
-
-    <div>
-      <p>this is where images will go</p>
-    </div>
+    {{#each images as |image|}}
+      <div class="row mb-2">
+        <div class="col-md-8">
+          <a href="/entry/{{image.id}}">
+          <img width="200px" height="200px" src="{{image.image_url}}" /></a>
+        </div>
+      </div>
+    {{/each}}
   </div>
 </div>
+
+<script src="./js/index.js"></script>
