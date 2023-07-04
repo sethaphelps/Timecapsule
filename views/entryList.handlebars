@@ -1,7 +1,8 @@
+<html class="entryList">
 {{#if entries.length}}
-<div id="delete-btn" class="col-md-6 project-list">
+<div id="delete-btn" class="col-md-6 entry-list">
   <button class="btn btn-sm text-white btn-danger"><a href="/">Back to Profile</a></button>
-  <h3>Current Projects:</h3>
+  <h3>Current Entry:</h3>
     {{#each entries as |entry|}}
     <div class="row mb-2">
       <div class="col-md-8">
@@ -18,3 +19,4 @@
 
 
 <script src="./js/delete.js"></script>
+</html>
