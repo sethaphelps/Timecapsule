@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Library } = require('../../models');
+const { Entry } = require('../../models');
 const withAuth = require('../../utils/loggedIn');
 
 router.get('/library', (req, res) => {

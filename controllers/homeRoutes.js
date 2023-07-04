@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { Entry, User } = require('../models');
 const withAuth = require('../utils/loggedIn');
-
 router.get('/entry', async (req, res) => {
   try {
     // Get all entries and JOIN with user data
@@ -84,8 +83,16 @@ router.get('/new-entry', (req, res) => {
   res.render('create');
 });
 
-router.get('/library', (req, res) => {
-  res.render('library');
+router.get('/library', async (req, res) => {
+  // find all the images in the entries?
+  const imageDataArray = await Entry.findAll({
+    attributes: ['id', 'image_url']
+  })
+
+  const images = imageDataArray.map( obj => obj.get({plain: true}));
+  // console log what imageData looks like?
+  console.log('images is', images);
+  res.render('library', { images });
 });
 
 router.get('/signup', (req, res) => {
