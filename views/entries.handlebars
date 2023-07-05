@@ -1,16 +1,15 @@
 <html class="entries">
   <div class="text-center">
-    <div class="text-center" id="profile-back-btn">
+    <div class="text-center entry-container" id="profile-back-btn">
       <h2>{{title}}</h2>
       <p>{{text}}</p>
       <p>Created by {{user.name}} on {{format_date date_created}}</p>
-      <img width="600px" height="600px" src="{{image_url}}" />
+      <img width="300px" height="300px" src="{{image_url}}" />
       <br />
-      <button class="btn btn-sm btn-danger show-library-btn"><a
+      <button class="btn btn-sm btn-danger"><a
           href="/library"
         >Back To Library</a></button>
       <button class="btn btn-sm btn-danger"><a href="/">Back to Profile</a></button>
     </div>
   </div>
-  <script src="./js/index.js"></script>
 </html>
