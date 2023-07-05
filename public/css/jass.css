@@ -20,7 +20,8 @@ body {
 }
 
 .homepage{
-  /* background-image: url("paper.gif"); */
+  background-image: url("../images/home-background.jpg");
+  background-size: cover;
   background-color: #006f09;
 }
 
