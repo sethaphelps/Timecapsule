@@ -86,7 +86,7 @@ router.get('/new-entry', (req, res) => {
 router.get('/library', async (req, res) => {
   // find all the images in the entries?
   const imageDataArray = await Entry.findAll({
-    attributes: ['id', 'image_url']
+    attributes: ['id', 'image_url', 'date_created']
   })
 
   const images = imageDataArray.map( obj => obj.get({plain: true}));
