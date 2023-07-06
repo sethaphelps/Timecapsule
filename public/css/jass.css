@@ -16,15 +16,6 @@ body {
   padding: 5px;
  }
 
-.libraryimg {
-  width: 150%
-}
-
-.libraryphoto{
-  max-width: 1400px;
-  margin-left: 100px;
-  margin-right: 100x;
-}
 
 .profile-btn{
  color: white;
@@ -53,17 +44,17 @@ body {
 }
 
 .entries{
-  background-image: url("../images/entrylist.jpg");
+  background-image: url("../images/wood.jpg");
   background-size: cover;
 }
 
 .entriestitle {
-  font-size: 60px;
+  font-size: 100px;
   color: white;
 }
 
 .entriestext {
-  font-size: 30px;
+  font-size: 40px;
   color: white;
 }
 
@@ -130,7 +121,8 @@ h1 {
 
 .profilehead{
   font-size: 6rem;
-  margin: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   background-color: #3d5542;
   color: white;
   border-radius: 1rem;
@@ -486,8 +478,8 @@ form [type='radio'] {
     align-items: center;
   }
   .create{
-    background-image: url("../images/back.png");
-    text-align: right;
+    background-image: url("../images/paper.jpg");
+    text-align: left;
   }
 .entryList{
   text-align: center;
@@ -498,6 +490,25 @@ form [type='radio'] {
 .profilehead{
   text-align: center;
   width: 90%;
+  font-size: 30px;
+}
+.create-entry-btn {
+  width: 300px;
+  height: 300px;
+}
+
+.show-entry-btn {
+  width: 300px;
+  height: 300px;
+}
+
+.show-library-btn {
+  width: 300px;
+  height: 300px;
+}
+
+.entries{
+  background-image: url("../images/wood.jpg");
 }
 
 
