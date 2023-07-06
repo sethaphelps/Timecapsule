@@ -1,7 +1,7 @@
 <html class="create">
   <div class="col-md-6">
-    <button class="btn btn-sm btn-danger"><a href="/">Back to Profile</a></button>
-    <h3>Write a new entry!</h3>
+    
+    <h3 class="createhead">Write a new entry!</h3>
 
     <form
       class="form image-form"
@@ -18,7 +18,7 @@
           <input type="hidden" name="upload_preset" value="new_one" />
         </p>
         <p>
-          <label>Select your photo: <input type="file" name="file" /></label>
+          <label class="label">Select your photo: <input type="file" name="file" style="font-size:large;" /></label>
         </p>
       </div>
       <button
@@ -54,6 +54,7 @@
         value="Submit"
         class="btn btn-sm btn-danger create-btn"
       >Create</button>
+      <button class="btn btn-sm btn-danger profile-btn"><a class="profile-btn" href="/">Back to Profile</a></button>
       <p class="text-danger create-response"></p>
       <img id="uploaded" />
       <div id="results"></div>

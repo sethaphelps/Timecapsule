@@ -9,34 +9,72 @@ html,
 body {
   min-height: 100%;
 }
- .img {
-  height: 100%;
-  width: 100%;
+.image {
+  border-color: black;
+  border-width: 4px;
+  border-radius: 1rem;
+  padding: 5px;
+ }
+
+.libraryimg {
+  width: 150%
+}
+
+.libraryphoto{
+  max-width: 1400px;
+  margin-left: 100px;
+  margin-right: 100x;
+}
+
+.profile-btn{
+ color: white;
+}
+
+.date {
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+ }
+
+ .dateentry {
+  color: white;
+  font-size: 20px;
+  text-align: center;
  }
  
 .create{
-  background-image: url("../images/outdoor.jpg");
+  background-image: url("../images/back.png");
   background-size: cover;
 }
 
 .homepage{
-  background-image: url("../images/outdoor.jpg");
+  background-image: url("../images/home-background.jpg");
   background-size: cover;
 }
 
 .entries{
-  background-image: url("../images/outdoor.jpg");
+  background-image: url("../images/entrylist.jpg");
   background-size: cover;
   color: #000000;
 }
 
+.entriestitle {
+  font-size: 60px;
+  color: white;
+}
+
+.entriestext {
+  font-size: 30px;
+  color: white;
+}
+
 .entryList{
-  background-image: url("../images/outdoor.jpg");
+  background-image: url("../images/entry.jpg");
   background-size: cover;
 }
 
 .library{
-  background-image: url("../images/outdoor.jpg");
+  background-image: url("../images/libraryback.jpg");
   background-size: cover;
 }
 
@@ -46,8 +84,15 @@ body {
 }
 
 .signup{
-  background-image: url("../images/outdoor.jpg");
+  background-image: url("../images/home-background.jpg");
   background-size: cover;
+}
+
+.containerentry {
+  width: 85%;
+  max-width: 1250px;
+  margin-left: 300px;
+  margin-right: 500px;
 }
 
 /* .entry-container {
@@ -82,12 +127,29 @@ h1 {
   font-size: 2.25rem;
 }
 
+.profilehead{
+  font-size: 6rem;
+  margin: 3rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+}
+
+.createhead {
+  font-size: 45px;
+}
+
+.label {
+  font-size: 30px;
+}
+
 h2 {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 30px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -127,7 +189,7 @@ button {
 }
 
 a {
-  color: #6cb547;
+  color:  #3d5542;
   text-decoration: none;
 }
 
@@ -183,51 +245,72 @@ a:hover {
 }
 
 .create-entry-btn {
-  background-image: url("../images/book.jpg");
+  background-image: url("../images/note1.jpg");
   width: 450px;
   height: 400px;
   padding: 0;
+  border-color: white;
+  border-width: 4px;
+  border-radius: 1rem;
 }
 
 .show-entry-btn {
-  background-image: url("../images/book.jpg");
+  background-image: url("../images/browse.jpg");
   width: 450px;
   height: 400px;
   padding: 0;
+  border-color: white;
+  border-width: 4px;
+  border-radius: 1rem;
 }
 
 .show-library-btn {
-  background-image: url("../images/book.jpg");
+  background-image: url("../images/library.jpg");
   width: 450px;
   height: 400px;
   padding: 0;
+  border-color: white;
+  border-width: 4px;
+  border-radius: 1rem;
 }
+
+.no-button{
+  padding: 5px;
+  border-radius: .5rem;
+  background-color: #3d5542;
+  color: #ffffff;
+  font-size: larger
+}
+
+/* #logout {
+  size: 5px;
+} */
 
 .btn:hover {
   background-color: #cecece;
 }
 
 .btn.btn-danger {
-  background-color: #e64c66;
-  
+  background-color: #3d5542;
+
   color: #ffffff;
 }
 
 .btn.btn-danger:hover {
-  background-color: #ee8294;
+  background-color: #3d5542;
   box-shadow: 3px 3px olive;
 }
 
 .card {
-  border: 1px solid #1a1a1a;
   padding: 0.375rem;
   margin-bottom: 1rem;
 }
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: #2d3e50;
-  color: #d9e9e8;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
 }
 
 .card .card-body {
@@ -244,7 +327,7 @@ a:hover {
 }
 
 .card.card-rounded .card-header {
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  border-radius: .5rem;
 }
 
 form {
@@ -255,6 +338,7 @@ form .form-group {
   display: block;
   width: 100%;
   margin: 0.625rem 0;
+  font-size: 30px;
 }
 
 form .form-input,

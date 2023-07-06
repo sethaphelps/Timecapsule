@@ -16,9 +16,10 @@ const loginFormHandler = async (event) => {
 
     if (response.ok) {  
       document.location.replace('/profile');
+    } else if (password.length < 8) {
+      logAgain.textContent = 'Password must be at least 8 characters';
     } else {
-      //alert("Wrong password try again"); 
-      logAgain.textContent = "Wrong email or password. Try again."
+      logAgain.textContent = 'Please enter correct password';
     }
   }
 };

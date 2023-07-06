@@ -1,7 +1,7 @@
 <html class="library">
 <div> 
-  <div>
-    <button class="btn btn-sm text-white btn-danger"><a href="/">Back to Profile</a></button>
+  <div class="libraryimg libraryphoto">
+    <button class="btn btn-sm text-white btn-danger"><a class="profile-btn" href="/">Back to Profile</a></button>
     <div>
       <h2>Image Library</h2>
     </div>
@@ -9,8 +9,8 @@
       <div style="display: inline-flex; "> 
         <div>  
           <a href="/entry/{{image.id}}">
-          <img width="250px" height="250px" src="{{image.image_url}}" /> </br>
-          <span>Created on {{format_date image.date_created}}</span></a>
+          <img width="250px" height="250px" class="image" src="{{image.image_url}}" /> </br>
+          <span class="date" >Created on {{format_date image.date_created}}</span></a>
         </div>
       </div>
     {{/each}}
