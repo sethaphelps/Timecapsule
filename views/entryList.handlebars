@@ -1,6 +1,6 @@
 <html class="entryList">
 {{#if entries.length}}
-<div id="delete-btn" class="col-md-6 entry-list containerentry">
+<div id="delete-btn" class="col-md-6 entry-list containerentry container container-fluid mt-5">
   <button class="btn btn-sm text-white btn-danger"><a class="profile-btn" href="/">Back to Profile</a></button>
   <h3 class="h3entry">Your Entries:</h3>
     {{#each entries as |entry|}}
@@ -8,7 +8,7 @@
       <div class="col-md-8">
         <h4><a href="/entry/{{entry.id}}">{{entry.title}}</a></h4>
       </div>
-      <div class="col-md-4">
+      <div>
         <button class="btn btn-sm btn-danger entry-delete-btn" data-id="{{entry.id}}">DELETE</button>
       </div>
     </div>
