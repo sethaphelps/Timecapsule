@@ -130,8 +130,8 @@ h1 {
 .profilehead{
   font-size: 6rem;
   margin: 3rem;
-  background-color: white;
-  color: black;
+  background-color: #3d5542;
+  color: white;
   border-radius: 1rem;
 }
 
@@ -308,8 +308,8 @@ a:hover {
 
 .card .card-header {
   padding: 0.375rem;
-  background-color: white;
-  color: black;
+  background-color: #3d5542;
+  color: white;
   border-radius: 1rem;
 }
 
