@@ -55,17 +55,14 @@ body {
 .entries{
   background-image: url("../images/entrylist.jpg");
   background-size: cover;
-  color: #000000;
 }
 
 .entriestitle {
   font-size: 60px;
-  color: white;
 }
 
 .entriestext {
   font-size: 30px;
-  color: white;
 }
 
 .entryList{
@@ -428,7 +425,7 @@ form [type='radio'] {
   display: none;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (max-width: 640px) {
   .col-sm-1 {
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
@@ -485,6 +482,13 @@ form [type='radio'] {
   }
   .align-center-sm {
     align-items: center;
+  }
+  .create{
+    background-image: url("../images/back.png");
+    text-align: center;
+  }
+  .row{
+    margin-left: 10px;
   }
 }
 
