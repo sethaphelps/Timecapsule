@@ -16,7 +16,6 @@ const signupFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        //alert(response.statusText);
         signAgain.textContent = "Account with this email already exists. Use a different email or log in.";
       }
     } else {
