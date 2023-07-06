@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Entry, User } = require('../models');
 const withAuth = require('../utils/loggedIn');
-router.get('/entry', async (req, res) => {
+router.get('/entry', withAuth, async (req, res) => {
   try {
     const entryData = await Entry.findAll({
       include: [
@@ -23,7 +23,7 @@ router.get('/entry', async (req, res) => {
   }
 });
 
-router.get('/entry/:id', async (req, res) => {
+router.get('/entry/:id', withAuth, async (req, res) => {
   try {
     const entryData = await Entry.findByPk(req.params.id, {
       include: [
@@ -80,7 +80,7 @@ router.get('/new-entry', (req, res) => {
   res.render('create');
 });
 
-router.get('/library', async (req, res) => {
+router.get('/library', withAuth, async (req, res) => {
   
   const imageDataArray = await Entry.findAll({
     attributes: ['id', 'image_url', 'date_created']
