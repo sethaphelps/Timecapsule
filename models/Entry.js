@@ -14,7 +14,7 @@ class Entry extends Model {}
       type: DataTypes.STRING,
     },
     text: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     image_url: {
       type: DataTypes.STRING, 

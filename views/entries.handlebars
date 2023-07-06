@@ -1,15 +1,15 @@
 <html class="entries">
   <div class="text-center">
     <div class="text-center entry-container" id="profile-back-btn">
-      <h2>{{title}}</h2>
-      <p>{{text}}</p>
-      <p>Created by {{user.name}} on {{format_date date_created}}</p>
-      <img width="300px" height="300px" src="{{image_url}}" />
+      <h2 class="entriestitle">{{title}}</h2>
+      <p class="entriestext">{{text}}</p>
+      <p class="dateentry">Created by {{user.name}} on {{format_date date_created}}</p>
+      <img width="350px" height="350px" src="{{image_url}}" />
       <br />
-      <button class="btn btn-sm btn-danger"><a
+      <button class="btn btn-sm btn-danger"><a class="profile-btn"
           href="/library"
         >Back To Library</a></button>
-      <button class="btn btn-sm btn-danger"><a href="/">Back to Profile</a></button>
+      <button class="btn btn-sm btn-danger"><a class="profile-btn" href="/">Back to Profile</a></button>
     </div>
   </div>
 </html>
