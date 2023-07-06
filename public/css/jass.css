@@ -59,10 +59,12 @@ body {
 
 .entriestitle {
   font-size: 60px;
+  color: white;
 }
 
 .entriestext {
   font-size: 30px;
+  color: white;
 }
 
 .entryList{
@@ -485,7 +487,8 @@ form [type='radio'] {
   }
   .create{
     background-image: url("../images/back.png");
-    text-align: center;
+    text-align: right;
+
   }
   .row{
     margin-left: 10px;
