@@ -22,9 +22,13 @@ body {
 }
 
 .date {
-  color: #000000;
-  font-size: 20px;
+  color: white;
+  font-size: 25px;
   text-align: center;
+ }
+
+ .librarytitle{
+  font-size: 40px;
  }
 
  .dateentry {
@@ -58,20 +62,25 @@ body {
   color: white;
 }
 
+.entrytext {
+  font-size: 30px;
+}
+
 
 
 .entryList{
-  background-image: url("../images/entry.jpg");
+  background-image: url("../images/paper.jpg");
   background-size: cover;
 }
 
 .library{
-  background-image: url("../images/libraryback.jpg");
+  background-image: url("../images/librarybackround2.jpg");
   background-size: cover;
+  color: white;
 }
 
 .profile{
-  background-image: url("../images/outdoor.jpg");
+  background-image: url("../images/woods.jpg");
   background-size: cover;
 }
 
@@ -161,6 +170,11 @@ p {
   font-size: 1.1rem;
   margin: 0 0 1rem;
   line-height: 1.5;
+}
+.h3entry{
+  padding-bottom: 15px;
+  font-size: 40px
+  
 }
 
 ul,
@@ -542,7 +556,6 @@ form [type='radio'] {
   }
   .col-md-6 {
     flex: 0 0 50%;
-    max-width: 50%;
   }
   .col-md-7 {
     flex: 0 0 58.33333%;
