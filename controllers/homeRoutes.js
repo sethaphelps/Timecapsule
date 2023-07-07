@@ -4,6 +4,9 @@ const withAuth = require('../utils/loggedIn');
 router.get('/entry', withAuth, async (req, res) => {
   try {
     const entryData = await Entry.findAll({
+      where: {
+        user_id: req.session.user_id
+      },
       include: [
         {
           model: User,
