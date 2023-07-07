@@ -86,6 +86,9 @@ router.get('/new-entry', (req, res) => {
 router.get('/library', withAuth, async (req, res) => {
   
   const imageDataArray = await Entry.findAll({
+    where: {
+      user_id: req.session.user_id
+    },
     attributes: ['id', 'image_url', 'date_created']
   })
 
