@@ -28,7 +28,7 @@ In this project, we worked as a group to create an interactive and responsive ap
 
 ## Webpage Access
  - Github Repository (https://github.com/sethaphelps/Timecapsule)
- - Deployed Webpage (Heroku link here)
+ - Deployed Webpage (https://timecapsule-bcs-b6145826d7cf.herokuapp.com/)
  - Class Presentation (https://docs.google.com/presentation/d/1D5L2uZ_X_bvArUm5rxSoI2SVf9hXKw-nNRp_w9YcWrs/edit#slide=id.p25)
 
 
